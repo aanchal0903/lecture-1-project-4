@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 40px;
+            background-color: antiquewhite;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <script>
+        function find()
+        {
+             let d  = new Date();
+        let day = d.getDay();
+        if(day==1||day==2||day==3||day==4||day==5)
+        {
+            alert("weekday");
+
+        }
+        else{
+            alert("weekend");
+        }
+        }
+       
+
+    </script>
+</head>
+<body>
+    <form onsubmit="find()">
+    
+    <center>
+        <input type="submit" value="weekdays or weekends">
+    </center>
+    </form>
+    
+</body>
+</html>
